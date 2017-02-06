@@ -1,8 +1,8 @@
 eVIP Subsampling Analysis
 
 I created a pipeline that evaluates eVIP at different simulated depths of sequencing.
-From fastq files, I subsampled 100 times at differnet 5 different depths, generated expression data with kallisto,
-filtered +normalized??, ran through the eVIP pipeline (eVIP_corr.py & eVIP_predict.py),
+At 5 different depths, I subsampled fastq files 100 different times, generated expression data with kallisto,
+filtered + normalized the data, ran through the eVIP pipeline (eVIP_corr.py & eVIP_predict.py),and 
 counted the final prediction call of each 100 repetitions.
 
 Steps:
@@ -25,4 +25,4 @@ Step 3: eVIP
     - eVIP_predict.py = uses algorithm to characterize mutations (LOF/GOF/COF/neutral)
 
 Step 4: counting the results
-  - depth_test_counter.py = combines the 100 predictions for each mutation into one file
+  depth_test_counter.py = combines the 100 predictions for each mutation into one file
